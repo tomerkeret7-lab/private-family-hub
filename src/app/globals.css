@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-lora);
+}
+
+@layer base {
+  body {
+    @apply bg-orange-50/40 text-stone-900 min-h-screen flex flex-col;
+  }
+}
