@@ -16,6 +16,12 @@ const lora = Lora({
 export const metadata: Metadata = {
   title: 'Private Family Hub',
   description: 'A warm and minimalist space for our family.',
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Family Hub',
+  },
 }
 
 export default function RootLayout({
