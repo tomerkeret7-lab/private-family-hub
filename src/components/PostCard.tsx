@@ -138,9 +138,9 @@ export default function PostCard({ post }: { post: Post }) {
     }
 
     return (
-        <article className="group break-inside-avoid mb-6 bg-white/90 backdrop-blur-sm rounded-3xl overflow-hidden shadow-sm border border-orange-100/50 transition-all duration-300 hover:shadow-md hover:border-orange-200">
+        <article className="group break-inside-avoid mb-6 bg-white/90 backdrop-blur-sm rounded-3xl overflow-hidden shadow-sm border border-stone-200 transition-all duration-300 hover:shadow-md hover:border-blue-200">
             <div className="p-4 flex items-center space-x-3">
-                <div className="w-9 h-9 rounded-full bg-orange-100 flex items-center justify-center text-orange-800 font-sans font-medium text-sm border border-orange-200">
+                <div className="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center text-blue-800 font-sans font-medium text-sm border border-blue-200">
                     {post.author_name ? post.author_name[0].toUpperCase() : '?'}
                 </div>
                 <div>
@@ -218,12 +218,12 @@ export default function PostCard({ post }: { post: Post }) {
                                 value={newComment}
                                 onChange={e => setNewComment(e.target.value)}
                                 placeholder="Add a comment..."
-                                className="flex-1 bg-stone-50 border border-stone-200 rounded-full px-4 py-2 text-sm focus:outline-none focus:border-orange-300 focus:ring-1 focus:ring-orange-300 transition-all"
+                                className="flex-1 bg-stone-50 border border-stone-200 rounded-full px-4 py-2 text-sm focus:outline-none focus:border-blue-300 focus:ring-1 focus:ring-blue-300 transition-all"
                             />
                             <button
                                 type="submit"
                                 disabled={!newComment.trim() || isSubmitting}
-                                className="p-2 text-white bg-orange-600 rounded-full hover:bg-orange-700 disabled:opacity-50 transition-colors flex flex-shrink-0 items-center justify-center w-8 h-8"
+                                className="p-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 disabled:opacity-50 transition-colors flex flex-shrink-0 items-center justify-center w-8 h-8"
                             >
                                 <Send className="w-4 h-4" />
                             </button>

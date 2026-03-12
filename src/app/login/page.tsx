@@ -35,13 +35,13 @@ export default function LoginPage() {
                 <div className="flex flex-col space-y-3 pt-2">
                     <button
                         formAction={login}
-                        className="w-full bg-orange-600 text-white rounded-xl py-3 px-4 font-medium hover:bg-orange-700 transition-colors shadow-sm"
+                        className="w-full bg-blue-600 text-white rounded-xl py-3 px-4 font-medium hover:bg-blue-700 transition-colors shadow-sm"
                     >
                         Sign in
                     </button>
                     <button
                         formAction={signup}
-                        className="w-full bg-white text-orange-700 border border-orange-200 rounded-xl py-3 px-4 font-medium hover:bg-orange-50 transition-colors shadow-sm"
+                        className="w-full bg-white text-blue-700 border border-blue-200 rounded-xl py-3 px-4 font-medium hover:bg-blue-50 transition-colors shadow-sm"
                     >
                         Create account
                     </button>

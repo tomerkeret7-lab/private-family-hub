@@ -94,12 +94,12 @@ export default function NotificationsMenu({ user }: { user: User }) {
         <div className="relative" ref={menuRef}>
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="relative p-2 text-stone-500 hover:text-orange-600 transition-colors rounded-full hover:bg-orange-50 focus:outline-none"
+                className="relative p-2 text-stone-500 hover:text-red-600 transition-colors rounded-full hover:bg-red-50 focus:outline-none"
                 title="Notifications"
             >
                 <Bell className="w-5 h-5" />
                 {unreadCount > 0 && (
-                    <span className="absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-orange-500 border-2 border-white rounded-full"></span>
+                    <span className="absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-red-500 border-2 border-white rounded-full"></span>
                 )}
             </button>
 
@@ -123,7 +123,7 @@ export default function NotificationsMenu({ user }: { user: User }) {
                                 {notifications.map(notification => (
                                     <div
                                         key={notification.id}
-                                        className={`p-4 hover:bg-orange-50/50 transition-colors cursor-pointer ${!notification.is_read ? 'bg-orange-50/20' : ''}`}
+                                        className={`p-4 hover:bg-stone-50 transition-colors cursor-pointer ${!notification.is_read ? 'bg-blue-50/20' : ''}`}
                                         onClick={() => markAsRead(notification.id)}
                                     >
                                         <div className="flex items-start space-x-3">
@@ -149,7 +149,7 @@ export default function NotificationsMenu({ user }: { user: User }) {
                                                 </p>
                                             </div>
                                             {!notification.is_read && (
-                                                <div className="flex-shrink-0 w-2 h-2 rounded-full bg-orange-500 mt-2"></div>
+                                                <div className="flex-shrink-0 w-2 h-2 rounded-full bg-blue-500 mt-2"></div>
                                             )}
                                         </div>
                                     </div>

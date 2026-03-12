@@ -49,8 +49,8 @@ export function AnnouncementForm({ authorName }: AnnouncementFormProps) {
     return (
         <form onSubmit={handleSubmit} className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 shadow-sm border border-stone-200">
             <div className="flex items-start space-x-3 sm:space-x-4">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
-                    <span className="text-orange-800 font-semibold text-sm sm:text-base">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                    <span className="text-blue-800 font-semibold text-sm sm:text-base">
                         {authorName.charAt(0).toUpperCase()}
                     </span>
                 </div>
@@ -59,7 +59,7 @@ export function AnnouncementForm({ authorName }: AnnouncementFormProps) {
                         value={content}
                         onChange={(e) => setContent(e.target.value)}
                         placeholder="Post a new announcement or reminder..."
-                        className="w-full bg-stone-50 border border-stone-200 rounded-lg sm:rounded-xl px-3 sm:px-4 py-2 sm:py-3 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition-all resize-none text-sm sm:text-base text-stone-900 placeholder-stone-500"
+                        className="w-full bg-stone-50 border border-stone-200 rounded-lg sm:rounded-xl px-3 sm:px-4 py-2 sm:py-3 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 transition-all resize-none text-sm sm:text-base text-stone-900 placeholder-stone-500"
                         rows={2}
                         required
                     />
@@ -75,13 +75,13 @@ export function AnnouncementForm({ authorName }: AnnouncementFormProps) {
                                 value={eventTime}
                                 onChange={(e) => setEventTime(e.target.value)}
                                 required
-                                className="w-full sm:w-auto bg-stone-50 border border-stone-200 rounded-lg px-3 py-2 text-sm text-stone-700 focus:outline-none focus:ring-2 focus:ring-orange-500/50"
+                                className="w-full sm:w-auto bg-stone-50 border border-stone-200 rounded-lg px-3 py-2 text-sm text-stone-700 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
                             />
                         </div>
                         <button
                             type="submit"
                             disabled={isSubmitting || !content.trim() || !eventTime}
-                            className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 disabled:bg-stone-300 disabled:cursor-not-allowed text-white font-medium px-4 py-2 sm:py-2 rounded-lg transition-colors flex items-center justify-center space-x-2 text-sm"
+                            className="w-full sm:w-auto bg-green-600 hover:bg-green-700 disabled:bg-stone-300 disabled:cursor-not-allowed text-white font-medium px-4 py-2 sm:py-2 rounded-lg transition-colors flex items-center justify-center space-x-2 text-sm"
                         >
                             <Send className="w-4 h-4" />
                             <span>{isSubmitting ? 'Posting...' : 'Post'}</span>

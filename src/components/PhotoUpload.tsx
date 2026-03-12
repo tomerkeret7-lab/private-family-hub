@@ -114,7 +114,7 @@ export default function PhotoUpload() {
                     {/* Photo Selection */}
                     <div className="space-y-2">
                         <label className="block text-sm font-medium text-stone-700">Photo</label>
-                        <div className={`relative border-2 border-dashed rounded-2xl transition-colors ${file ? 'border-stone-200 bg-stone-50' : 'border-stone-300 hover:border-stone-400 bg-stone-50 hover:bg-stone-100'}`}>
+                        <div className={`relative border-2 border-dashed rounded-2xl transition-colors ${file ? 'border-stone-200 bg-stone-50' : 'border-stone-300 hover:border-blue-400 bg-stone-50 hover:bg-blue-50/20'}`}>
 
                             {!file ? (
                                 <div className="py-12 px-4 flex flex-col items-center justify-center text-center cursor-pointer">
@@ -159,7 +159,7 @@ export default function PhotoUpload() {
                             value={authorName}
                             onChange={(e) => setAuthorName(e.target.value)}
                             placeholder="e.g. Uncle Bob"
-                            className="w-full px-4 py-3 rounded-xl border border-stone-200 bg-stone-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-stone-900 focus:border-transparent transition-all"
+                            className="w-full px-4 py-3 rounded-xl border border-stone-200 bg-stone-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                         />
                     </div>
 
@@ -180,7 +180,7 @@ export default function PhotoUpload() {
                     <button
                         type="submit"
                         disabled={!file || isUploading}
-                        className="w-full bg-orange-600 text-white rounded-xl py-3.5 px-4 font-medium hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-sm flex items-center justify-center space-x-2"
+                        className="w-full bg-blue-600 text-white rounded-xl py-3.5 px-4 font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-sm flex items-center justify-center space-x-2"
                     >
                         {isUploading ? (
                             <>

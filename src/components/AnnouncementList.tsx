@@ -50,11 +50,11 @@ export function AnnouncementList({ announcements }: AnnouncementListProps) {
                 const isPast = eventDate < new Date()
 
                 return (
-                    <div key={announcement.id} className={`bg-white rounded-xl shadow-sm border ${isPast ? 'border-stone-200 opacity-75' : 'border-orange-200'} p-4 sm:p-5 transition-all hover:shadow-md flex flex-col sm:flex-row gap-4`}>
+                    <div key={announcement.id} className={`bg-white rounded-xl shadow-sm border ${isPast ? 'border-stone-200 opacity-75' : 'border-green-200'} p-4 sm:p-5 transition-all hover:shadow-md flex flex-col sm:flex-row gap-4`}>
                         <div className="flex-1 space-y-3 min-w-0">
                             <div className="flex items-center space-x-2">
-                                <div className="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
-                                    <span className="text-orange-800 font-semibold text-sm">
+                                <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                    <span className="text-blue-800 font-semibold text-sm">
                                         {announcement.author_name.charAt(0).toUpperCase()}
                                     </span>
                                 </div>
@@ -73,7 +73,7 @@ export function AnnouncementList({ announcements }: AnnouncementListProps) {
 
                         <div className="flex flex-row sm:flex-col items-center sm:items-end justify-between sm:justify-center bg-stone-50 rounded-lg p-3 sm:w-48 flex-shrink-0 border border-stone-100">
                             <div className="flex flex-col items-start sm:items-end w-full">
-                                <span className={`text-xs font-medium uppercase tracking-wider mb-1 flex items-center gap-1 ${isPast ? 'text-stone-400' : 'text-orange-600'}`}>
+                                <span className={`text-xs font-medium uppercase tracking-wider mb-1 flex items-center gap-1 ${isPast ? 'text-stone-400' : 'text-green-600'}`}>
                                     <Clock className="w-3 h-3" />
                                     {isPast ? 'Past Event' : 'Upcoming'}
                                 </span>
