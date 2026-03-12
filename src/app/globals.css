@@ -9,10 +9,6 @@
 @layer base {
   body {
     body {
-      background-color: #FAF9F6;
-      /* ה-Off-white החם שרצית */
-      background-image: radial-gradient(#e5e7eb 0.5px, transparent 0.5px);
-      /* טקסטורה עדינה מאוד */
-      background-size: 20px 20px;
-      color: #1a1a1a;
+      background-color: blue !important;
     }
+  }
