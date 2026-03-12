@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Home, Image as ImageIcon, Settings, User, LogOut, LogIn } from 'lucide-react'
+import { Home, Image as ImageIcon, Settings, User, LogOut, LogIn, ClipboardList } from 'lucide-react'
 import { createClient } from '../../utils/supabase/server'
 import { LogoutButton } from './LogoutButton'
 import NotificationsMenu from './NotificationsMenu'
@@ -23,6 +23,9 @@ export default async function Navbar() {
                         {user ? (
                             <>
                                 <NotificationsMenu user={user} />
+                                <Link href="/bulletin-board" className="hover:text-orange-600 transition-colors p-2 rounded-full hover:bg-orange-50" title="Bulletin Board">
+                                    <ClipboardList className="w-5 h-5" />
+                                </Link>
                                 <Link href="/upload" className="hover:text-orange-600 transition-colors p-2 rounded-full hover:bg-orange-50" title="Upload Photo">
                                     <ImageIcon className="w-5 h-5" />
                                 </Link>
