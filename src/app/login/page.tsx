@@ -2,7 +2,7 @@ import { login, signup } from './actions'
 
 export default function LoginPage() {
     return (
-        <div className="max-w-md mx-auto mt-12 bg-white rounded-3xl shadow-sm border border-stone-100 p-8">
+        <div className="max-w-md mx-auto mt-12 bg-white rounded-3xl shadow-md border border-white/20 p-8">
             <div className="text-center mb-8">
                 <h1 className="text-2xl font-sans font-semibold text-stone-900 tracking-tight">Welcome to FamilyHub</h1>
                 <p className="text-stone-500 mt-2 text-sm">Sign in or create an account to share memories.</p>

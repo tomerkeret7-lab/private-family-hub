@@ -94,7 +94,7 @@ export default function NotificationsMenu({ user }: { user: User }) {
         <div className="relative" ref={menuRef}>
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="relative p-2 text-stone-500 hover:text-red-600 transition-colors rounded-full hover:bg-red-50 focus:outline-none"
+                className="relative p-2 text-gray-300 hover:text-white transition-colors rounded-full hover:bg-white/10 focus:outline-none"
                 title="Notifications"
             >
                 <Bell className="w-5 h-5" />
@@ -104,9 +104,9 @@ export default function NotificationsMenu({ user }: { user: User }) {
             </button>
 
             {isOpen && (
-                <div className="absolute right-0 mt-2 w-80 bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border border-orange-100 overflow-hidden z-50 transform opacity-100 scale-100 transition-all origin-top-right">
-                    <div className="p-4 border-b border-orange-100/50 flex items-center justify-between bg-orange-50/30">
-                        <h3 className="font-sans font-semibold text-stone-800 tracking-tight">Activity</h3>
+                <div className="absolute right-0 mt-2 w-80 bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 overflow-hidden z-50 transform opacity-100 scale-100 transition-all origin-top-right">
+                    <div className="p-4 border-b border-stone-200/50 flex items-center justify-between bg-stone-50/50">
+                        <h3 className="font-sans font-semibold text-stone-900 tracking-tight">Activity</h3>
                         {unreadCount > 0 && (
                             <button
                                 onClick={markAllAsRead}
@@ -117,9 +117,9 @@ export default function NotificationsMenu({ user }: { user: User }) {
                         )}
                     </div>
 
-                    <div className="max-h-80 overflow-y-auto">
+                    <div className="max-h-80 overflow-y-auto bg-white">
                         {notifications.length > 0 ? (
-                            <div className="divide-y divide-orange-100/30">
+                            <div className="divide-y divide-stone-100">
                                 {notifications.map(notification => (
                                     <div
                                         key={notification.id}
@@ -129,7 +129,7 @@ export default function NotificationsMenu({ user }: { user: User }) {
                                         <div className="flex items-start space-x-3">
                                             <div className="flex-shrink-0 mt-0.5">
                                                 {/* Simple avatar based on actor name */}
-                                                <div className="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-orange-800 font-sans font-medium text-xs border border-orange-200">
+                                                <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-sans font-medium text-xs border border-blue-100">
                                                     {notification.actor_name[0].toUpperCase()}
                                                 </div>
                                             </div>
@@ -156,8 +156,8 @@ export default function NotificationsMenu({ user }: { user: User }) {
                                 ))}
                             </div>
                         ) : (
-                            <div className="p-8 text-center">
-                                <Bell className="w-8 h-8 text-stone-200 mx-auto mb-3" />
+                            <div className="p-8 text-center bg-white">
+                                <Bell className="w-8 h-8 text-stone-300 mx-auto mb-3" />
                                 <p className="text-stone-500 font-sans text-sm">No new notifications</p>
                             </div>
                         )}

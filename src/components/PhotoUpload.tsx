@@ -99,7 +99,7 @@ export default function PhotoUpload() {
     }
 
     return (
-        <div className="max-w-xl mx-auto bg-white/80 backdrop-blur-sm rounded-3xl shadow-sm border border-orange-100/50 overflow-hidden">
+        <div className="max-w-xl mx-auto bg-white/95 backdrop-blur-md rounded-3xl shadow-lg border border-white/20 overflow-hidden">
             <div className="p-6 md:p-8">
                 <h2 className="text-2xl font-sans font-semibold text-stone-800 mb-6 tracking-tight">Share a Memory</h2>
 

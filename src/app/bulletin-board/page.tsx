@@ -34,10 +34,10 @@ export default async function BulletinBoardPage() {
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <header className="mb-8">
                 <div className="flex items-center gap-3 mb-2">
-                    <ClipboardList className="w-8 h-8 text-green-600" />
-                    <h1 className="text-3xl font-bold text-stone-900 tracking-tight">Bulletin Board</h1>
+                    <ClipboardList className="w-8 h-8 text-green-400" />
+                    <h1 className="text-3xl font-bold text-white tracking-tight">Bulletin Board</h1>
                 </div>
-                <p className="text-stone-600 text-lg">
+                <p className="text-gray-300 text-lg">
                     Post reminders and upcoming family events.
                 </p>
             </header>
@@ -48,7 +48,7 @@ export default async function BulletinBoardPage() {
                 </section>
 
                 <section>
-                    <h2 className="text-xl font-bold text-stone-800 mb-4 flex items-center justify-between">
+                    <h2 className="text-xl font-bold text-white mb-4 flex items-center justify-between">
                         <span>Upcoming</span>
                         <span className="text-sm font-medium bg-blue-100 text-blue-800 px-2.5 py-0.5 rounded-full">
                             {announcements?.length || 0} Events

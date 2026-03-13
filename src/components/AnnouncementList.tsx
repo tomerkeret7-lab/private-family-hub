@@ -37,8 +37,8 @@ export function AnnouncementList({ announcements }: AnnouncementListProps) {
 
     if (announcements.length === 0) {
         return (
-            <div className="bg-white rounded-xl shadow-sm border border-stone-200 p-8 text-center">
-                <p className="text-stone-500">No announcements yet. Be the first to post!</p>
+            <div className="bg-white/10 rounded-xl shadow-sm border border-white/20 p-8 text-center backdrop-blur-sm">
+                <p className="text-white">No announcements yet. Be the first to post!</p>
             </div>
         )
     }

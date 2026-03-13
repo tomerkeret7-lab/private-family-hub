@@ -4,10 +4,11 @@
   --font-sans: var(--font-inter);
   --font-serif: var(--font-lora);
   --color-warm-off-white: #FAF9F6;
+  --color-navy-blue: #003366;
 }
 
 @layer base {
   body {
-    @apply bg-warm-off-white text-stone-900 min-h-screen flex flex-col;
+    @apply bg-navy-blue text-white min-h-screen flex flex-col;
   }
 }
