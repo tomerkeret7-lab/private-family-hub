@@ -8,7 +8,6 @@
 
 @layer base {
   body {
-    body {
-      background-color: blue !important;
-    }
+    @apply bg-warm-off-white text-stone-900 min-h-screen flex flex-col;
   }
+}

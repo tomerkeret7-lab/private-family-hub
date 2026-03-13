@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${lora.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${lora.variable} font-sans antialiased bg-warm-off-white text-stone-900 min-h-screen flex flex-col`}>
         <Navbar />
         <main className="flex-1 max-w-2xl w-full mx-auto p-4 sm:p-6 lg:p-8">
           {children}
